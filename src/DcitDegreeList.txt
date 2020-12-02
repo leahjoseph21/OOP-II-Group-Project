@@ -1,0 +1,80 @@
+CompSciSpecialSem1
+COMP 1600 - Introduction to Computing Concepts
+COMP 1601 -  Computer Programming I
+INFO 1600 - Introduction to Information Technology Concepts
+MATH 1115 - Fundamental Mathematics for the General Sciences I
+-
+CompSciSpecialSem2
+COMP 1602 - Computer Programming II
+COMP 1603 - Computer Programming III
+COMP 1604 - Mathematics for Computing
+INFO 1601 - Introduction to WWW Programming
+-
+CompSciManSem1
+ACCT 1002 - Introduction to Financial Accounting
+COMP 1600 - Introduction to Computing Concepts
+COMP 1601 - Computer Programming I
+ECON 1001 - Introduction to Microeconomics
+-
+CompSciManSem2
+ACCT 1003 - Introduction to Cost and Managerial Accounting
+COMP 1602 - Computer Programming II
+COMP 1603 - Computer Programming III
+ECON 1002 Introduction to Macroeconomics
+-
+CompSciMajorSem1
+COMP 1600 - Introduction to Computing Concepts 
+COMP 1601 - Computer Programming I 
+-
+CompSciMajorSem2
+COMP 1602 - Computer Programming II 
+COMP 1603 - Computer Programming III 
+-
+CompSciMinorSem1
+COMP 1600 - Introduction to Computing Concepts 
+COMP 1601 - Computer Programming I 
+-
+CompSciMinorSem2
+COMP 1602 - Computer Programming II 
+COMP 1603 - Computer Programming III 
+-
+InfoTechSpecialSem1
+COMP 1600 - Introduction to Computing Concepts  
+COMP 1601 - Computer Programming 
+INFO 1600 - Introduction to Information Technology Concepts 
+MATH 1115 - Fundamental Mathematics for the General Sciences I 
+-
+InfoTechSpecialSem2
+COMP 1602 - Computer Programming II 
+COMP 1603 - Computer Programming III 
+COMP 1604 - Mathematics for Computing 
+INFO 1601 - Introduction to WWW Programming 
+-
+InfoTechManSem1
+ACCT 1002 - Introduction to Financial Accounting  
+COMP 1601 - Computer Programming I 
+ECON 1001 - Introduction to Microeconomics 
+INFO 1600 - Introduction to Information Technology Concepts 
+-
+InfoTechManSem2
+ACCT 1003 - Introduction to Cost and Managerial Accounting  
+COMP 1602 - Computer Programming II
+ECON 1002 - Introduction to Macroeconomics 
+INFO 1601 - Introduction to WWW Programming
+-
+InfoTechMajorSem1
+COMP 1601 - Computer Programming I 
+INFO 1600 - Introduction to Information Technology Concepts 
+-
+InfoTechMajorSem2
+COMP 1602 - Computer Programming II 
+INFO 1601 - Introduction to WWW Programming
+-
+InfoTechMinorSem1
+COMP 1601 - Computer Programming I 
+INFO 1600 - Introduction to Information Technology Concepts 
+-
+InfoTechMinorSem2
+COMP 1602 - Computer Programming II 
+INFO 1601 - Introduction to WWW Programming
+-
