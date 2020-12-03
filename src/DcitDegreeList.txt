@@ -42,7 +42,7 @@ InfoTechSpecialSem1
 COMP 1600 - Introduction to Computing Concepts  
 COMP 1601 - Computer Programming 
 INFO 1600 - Introduction to Information Technology Concepts 
-MATH 1115 - Fundamental Mathematics for the General Sciences I 
+MATH 1115 - Fundamental Mathematics for the General Sciences I
 -
 InfoTechSpecialSem2
 COMP 1602 - Computer Programming II 
