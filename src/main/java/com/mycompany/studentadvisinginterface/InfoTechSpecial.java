@@ -11,10 +11,7 @@ import java.io.IOException;
  * @author Leah
  */
 public class InfoTechSpecial extends DcitDegree{
-    private AdvisingGUI gui;
-   
-    
-
+        public boolean exempt = false;
     ArrayList<String> s1CourseList = new ArrayList<String>();
     ArrayList<String> s2CourseList = new ArrayList<String>();
     
@@ -36,38 +33,8 @@ public class InfoTechSpecial extends DcitDegree{
         }
         return numCourses;
     }
-
-    @Override
-    public String printList(boolean exemption) {
-        String course;
-        int a = 0 ;
-        String studentList = "Your recommended courses are: " + '\n' + '\n';
-        
-        //System.out.println("Your recommended courses are: " + '\n');
-        
-        //if (){
-            for (int i = 0; i < numCourses; i++){
-                course = List.get(i);
-                if (course.equals("MATH 1115 - Fundamental Mathematics for the General Sciences I")&&(exemption == true)){
-                    studentList = studentList + "       **You are not required to take MATH 1115**";
-                }else{
-                studentList = studentList + List.get(i) + '\n'; 
-                a+=3;
-                }
-            }
-        //}
-        /*else{
-            for (int i = 0; i < numCourses; i++)  
-                studentList = studentList + List.get(i)+ '\n'; 
-
-        }*/
-        studentList = studentList + '\n' + "Number of credits: " + a;
-        return studentList;
-       
     
-    }
-    
-    public void loadSem1CourseLists() {
+    public void loadSem1CourseLists(){
         try {
             courses = degreeListMaker();
         } catch (IOException e) {
@@ -94,6 +61,7 @@ public class InfoTechSpecial extends DcitDegree{
             s1CourseList.add(courses.get(i));
             i++;
         }
+
     }
 
     public void loadSem2CourseLists(){
@@ -124,6 +92,31 @@ public class InfoTechSpecial extends DcitDegree{
             i++;
         }
     }
+    
+    
+    
 
+    @Override
+    public String printList(boolean exemption) {
+        String course;
+        int a = 0;
+        String studentList = "Your recommended courses are: " + '\n' + '\n';
+        
+
+            for (int i = 0; i < numCourses; i++){
+                course = List.get(i);
+                if (course.equals("MATH 1115 - Fundamental Mathematics for the General Sciences I")&&(exemption == true)){
+                    studentList = studentList + "       **You are not required to take MATH 1115**" + '\n';
+                }else{
+                studentList = studentList + List.get(i) + '\n';
+                a+=3;
+                }
+            }
+
+        studentList = studentList + '\n' + "Number of credits: " + a;
+        return studentList;
+    
+    }
+    
     
 }

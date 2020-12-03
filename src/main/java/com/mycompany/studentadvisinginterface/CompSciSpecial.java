@@ -112,13 +112,7 @@ public class CompSciSpecial extends DcitDegree {
                 a+=3;
                 }
             }
-        //}
-        /*else{
-            for (int i = 0; i < numCourses; i++)  
-                studentList = studentList + List.get(i)+ '\n'; 
 
-        }*/
-        
         studentList = studentList + '\n' + "Number of credits: " + a;
         return studentList;
     

@@ -20,6 +20,7 @@ public class AdvisingGUI extends javax.swing.JFrame {
     private double gpa = 0.0 ;
     private boolean exempt = false;
     private DcitDegree dcitDegree;
+    private int count = 0;
 
 
     /**
@@ -135,6 +136,9 @@ public class AdvisingGUI extends javax.swing.JFrame {
         recommendCourseList.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 recommendCourseListMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                recommendCourseListMousePressed(evt);
             }
         });
         recommendCourseList.addActionListener(new java.awt.event.ActionListener() {
@@ -339,7 +343,7 @@ public class AdvisingGUI extends javax.swing.JFrame {
         
         degreeSelected = degree.getSelectedItem().toString();
         
-        if(degreeSelected.equals("Computer Science (Special)")||degreeSelected.equals("Information Technology (Special)")){
+        if((degreeSelected.equals("Computer Science (Special)"))||(degreeSelected.equals("Information Technology (Special)"))){
             exemptionPanel.setVisible(true);
             boolean exempt = true;
         }else{
@@ -372,18 +376,15 @@ public class AdvisingGUI extends javax.swing.JFrame {
 
         ArrayList <String> L1 = dcitDegree.getS1CourseList();
         ArrayList <String>L2 = dcitDegree.getS2CourseList();
+        //count++;
         
         degreeSelected = degree.getSelectedItem().toString();
-        //(semesterSelected == 2 & gpa == 0.0)
-        //if( (degreeSelected.equals("--Select--"))||(semesterSelected == 0) || (status.equals("")) || (gpaPanel.isDisplayable()==true && gpa == 0.0) ){
         if( (degreeSelected.equals("--Select--"))||(status.equals(""))||(semesterSelected == 0) ||((gpaPanel.isShowing() && gpa == 0.0) )){
             result.setText("Please fill out ALL fields");
         }else{
             result.setText(null);
-            //courseInvoker.generate();
             result.setText(dcitDegree.recommendCourses(semesterSelected, status, gpa, L1, L2,exempt));
-            //courseInvoker.setAdvisor(studentAdvisor);
-            //result.setText(courseInvoker.generate());
+
             
             
             
@@ -443,6 +444,11 @@ public class AdvisingGUI extends javax.swing.JFrame {
         exemptionPanel.setVisible(false);
         
     }//GEN-LAST:event_buttonResetActionPerformed
+
+    private void recommendCourseListMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_recommendCourseListMousePressed
+        // TODO add your handling code here:
+   
+    }//GEN-LAST:event_recommendCourseListMousePressed
 
     /**
      * @param args the command line arguments
