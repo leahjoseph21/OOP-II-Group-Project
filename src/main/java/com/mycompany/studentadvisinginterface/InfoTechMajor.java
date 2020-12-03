@@ -23,7 +23,7 @@ public class InfoTechMajor extends DcitDegree {
 
     }
     
-    public int checkNumCoures(String status, double gpa){
+    public int checkNumCourses(String status, double gpa){
     int size;
 
         if ((status.equals("Part-time"))||(gpa > 0.0 && gpa < 2.0)){

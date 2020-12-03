@@ -22,7 +22,7 @@ public class CompSciMinor extends DcitDegree {
         return s2CourseList;
 
     }
-   public int checkNumCoures(String status, double gpa){
+   public int checkNumCourses(String status, double gpa){
     int size;
 
         if ((status.equals("Part-time"))||(gpa > 0.0 && gpa < 2.0)){

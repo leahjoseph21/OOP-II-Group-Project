@@ -375,7 +375,7 @@ public class AdvisingGUI extends javax.swing.JFrame {
     private void recommendCourseListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recommendCourseListActionPerformed
 
         ArrayList <String> L1 = dcitDegree.getS1CourseList();
-        ArrayList <String>L2 = dcitDegree.getS2CourseList();
+        ArrayList <String> L2 = dcitDegree.getS2CourseList();
         //count++;
         
         degreeSelected = degree.getSelectedItem().toString();

@@ -90,7 +90,7 @@ public abstract class DcitDegree {
     //Strategy Methods
     public abstract void loadSem1CourseLists();
     public abstract void loadSem2CourseLists();
-    public abstract int checkNumCoures(String status, double gpa);
+    public abstract int checkNumCourses(String status, double gpa);
 
     public  String printList(boolean exemptions){
         //create a string
@@ -114,7 +114,7 @@ public abstract class DcitDegree {
         loadSem1CourseLists();
         loadSem2CourseLists();
         checkCourseList(semester,s1CourseList,s2CourseList);
-        checkNumCoures(status,gpa);
+        checkNumCourses(status,gpa);
         return  printList(exempt);
 
 
