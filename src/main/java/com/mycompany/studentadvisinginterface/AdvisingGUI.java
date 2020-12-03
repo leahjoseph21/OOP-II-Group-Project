@@ -10,7 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * Main class and GUI of the project which manages data entry and is interacted with by the user
  * @author Leah J., Nikolei M., Sayaad A.
  */
 public class AdvisingGUI extends javax.swing.JFrame {
@@ -33,16 +33,36 @@ public class AdvisingGUI extends javax.swing.JFrame {
         
         
     }
+    
+    /** 
+     * Retrieves the semester selected from the form
+     * @return semesterSelected
+     */
     //getters
     public int getSemester(){
         return semesterSelected;
     }
+    
+    /** 
+     * Retrieves the status selected from the form
+     * @return String
+     */
     public String getStatus(){
         return status;
     }
+    
+    /** 
+     * Retrieves the GPA entered in the form
+     * @return double
+     */
     public double getGpa(){
         return gpa;
     }
+    
+    /** 
+     * Retrieves the exempt status of the user from the form
+     * @return boolean
+     */
     public boolean getExempt(){
         return exempt;
     }
@@ -325,6 +345,10 @@ public class AdvisingGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    /** 
+     * @param (Special)"))
+     */
     private void semester1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_semester1ActionPerformed
         // TODO add your handling code here:
         
@@ -332,12 +356,20 @@ public class AdvisingGUI extends javax.swing.JFrame {
         gpaPanel.setVisible(false);
     }//GEN-LAST:event_semester1ActionPerformed
 
+    
+    /** 
+     * @param (Special)"))
+     */
     private void fullTimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fullTimeActionPerformed
         // TODO add your handling code here:
         status = "Full-time";
         
     }//GEN-LAST:event_fullTimeActionPerformed
 
+    
+    /** 
+     * @param (Special)"))
+     */
     private void degreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_degreeActionPerformed
         // TODO add your handling code here:
         
@@ -372,6 +404,10 @@ public class AdvisingGUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_degreeActionPerformed
 
+    
+    /** 
+     * @param )
+     */
     private void recommendCourseListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recommendCourseListActionPerformed
 
         ArrayList <String> L1 = dcitDegree.getS1CourseList();
@@ -391,6 +427,10 @@ public class AdvisingGUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_recommendCourseListActionPerformed
 
+    
+    /** 
+     * @param args[]
+     */
     private void semester2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_semester2ActionPerformed
         // TODO add your handling code here:
         semesterSelected = 2;
@@ -400,6 +440,10 @@ public class AdvisingGUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_semester2ActionPerformed
 
+    
+    /** 
+     * @param args[]
+     */
     private void partTimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_partTimeActionPerformed
         // TODO add your handling code here:
         status = "Part-time";
@@ -407,30 +451,54 @@ public class AdvisingGUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_partTimeActionPerformed
 
+    
+    /** 
+     * @param args[]
+     */
     private void exemptionYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exemptionYesActionPerformed
         // TODO add your handling code here:
         exempt = true;
     }//GEN-LAST:event_exemptionYesActionPerformed
 
+    
+    /** 
+     * @param args[]
+     */
     private void recommendCourseListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_recommendCourseListMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_recommendCourseListMouseClicked
 
+    
+    /** 
+     * @param args[]
+     */
     private void lessGpaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lessGpaActionPerformed
         // TODO add your handling code here:
         gpa = 1.0;
     }//GEN-LAST:event_lessGpaActionPerformed
 
+    
+    /** 
+     * @param args[]
+     */
     private void moreGpaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_moreGpaActionPerformed
         // TODO add your handling code here:
         gpa = 2.0;
     }//GEN-LAST:event_moreGpaActionPerformed
 
+    
+    /** 
+     * @param args[]
+     */
     private void exemptionNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exemptionNoActionPerformed
         // TODO add your handling code here:
         exempt = false;
     }//GEN-LAST:event_exemptionNoActionPerformed
 
+    
+    /** 
+     * @param args[]
+     */
     private void buttonResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonResetActionPerformed
         // TODO add your handling code here:
         
@@ -445,6 +513,10 @@ public class AdvisingGUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_buttonResetActionPerformed
 
+    
+    /** 
+     * @param args[]
+     */
     private void recommendCourseListMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_recommendCourseListMousePressed
         // TODO add your handling code here:
    

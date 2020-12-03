@@ -6,10 +6,15 @@
 package com.mycompany.studentadvisinginterface;
 
 /**
- *
+ * Class which is used to initialize the GUI and set it to visible
  * @author Leah
  */
 public class NewStudentAdvisor {
+    
+    /** 
+     * Initializes the GUI and sets it to visible
+     * @param args
+     */
     public static void main(String[] args) {
         
         AdvisingGUI gui = new AdvisingGUI();

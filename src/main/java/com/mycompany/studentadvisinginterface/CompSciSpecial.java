@@ -7,23 +7,44 @@ package com.mycompany.studentadvisinginterface;
 import java.util.*;
 import java.io.IOException;
 /**
- *
+ * Class that models a Computer Science (Special) degree and its courses
  * @author Leah
  */
 public class CompSciSpecial extends DcitDegree {
+
+    /**
+     *Boolean to check if the student needs to take MATH1115 or not
+     */
     public boolean exempt = false;
     ArrayList<String> s1CourseList = new ArrayList<String>();
     ArrayList<String> s2CourseList = new ArrayList<String>();
     
+    
+    /** 
+     * Returns the course list for semester 1
+     * @return ArrayList
+     */
     public ArrayList<String> getS1CourseList(){
         return s1CourseList;
 
     }
+    
+    /** 
+     * Returns the course list for semester 2
+     * @return ArrayList
+     */
     public ArrayList<String> getS2CourseList(){
         return s2CourseList;
 
     }
     
+    
+    /** 
+     * Determines the number of courses that should be taken based on GPA and enrollment type
+     * @param status full/part-time status of the student
+     * @param gpa GPA of the student
+     * @return int
+     */
     public int checkNumCourses(String status, double gpa){
 
         if ((status.equals("Part-time"))||(gpa > 0.0 && gpa < 2.0)){
@@ -34,6 +55,9 @@ public class CompSciSpecial extends DcitDegree {
         return numCourses;
     }
     
+    /**
+     * Populates the s1CourseList with the appropriate courses
+     */
     public void loadSem1CourseLists(){
         try {
             courses = degreeListMaker();
@@ -64,6 +88,9 @@ public class CompSciSpecial extends DcitDegree {
 
     }
 
+    /**
+     * Populates the s2CourseList with the appropriate courses
+     */
     public void loadSem2CourseLists(){
         try {
             courses = degreeListMaker();
@@ -96,6 +123,12 @@ public class CompSciSpecial extends DcitDegree {
     
     
 
+    
+    /** 
+     * Prints the list of courses that are recommended, with a special case in place for if MATH1115 does not need to be taken
+     * @param exemption boolean which is true if the student did Pure or N1 Math
+     * @return String
+     */
     @Override
     public String printList(boolean exemption) {
         String course;

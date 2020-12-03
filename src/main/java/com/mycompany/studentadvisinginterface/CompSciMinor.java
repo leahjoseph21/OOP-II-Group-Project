@@ -7,23 +7,40 @@ package com.mycompany.studentadvisinginterface;
 import java.util.*;
 import java.io.IOException;
 /**
- *
+ * Class that models a minor in Computer Science and its courses
  * @author Leah
  */
 public class CompSciMinor extends DcitDegree {
-   ArrayList<String> s1CourseList = new ArrayList<String>();
+    ArrayList<String> s1CourseList = new ArrayList<String>();
     ArrayList<String> s2CourseList = new ArrayList<String>();
     
+    
+    /** 
+     * Returns the course list for semester 1
+     * @return ArrayList
+     */
     public ArrayList<String> getS1CourseList(){
         return s1CourseList;
 
     }
+    
+    /** 
+     * Returns the course list for semester 2
+     * @return ArrayList
+     */
     public ArrayList<String> getS2CourseList(){
         return s2CourseList;
 
     }
-   public int checkNumCourses(String status, double gpa){
-    int size;
+   
+   /** 
+    * Determines the number of courses that should be taken based on GPA and enrollment type
+    * @param status full/part-time status of the student
+    * @param gpa GPA of the student
+    * @return int
+    */
+    public int checkNumCourses(String status, double gpa){
+        int size;
 
         if ((status.equals("Part-time"))||(gpa > 0.0 && gpa < 2.0)){
             size = List.size();
@@ -38,7 +55,10 @@ public class CompSciMinor extends DcitDegree {
         return numCourses;
     }
    
-   public void loadSem1CourseLists() {
+    /**
+     * Populates the s1CourseList with the appropriate courses
+     */
+    public void loadSem1CourseLists() {
         try {
             courses = degreeListMaker();
         } catch (IOException e) {
@@ -69,6 +89,9 @@ public class CompSciMinor extends DcitDegree {
         
     }
 
+    /**
+     * Populates the s2CourseList with the appropriate courses
+     */
     public void loadSem2CourseLists(){
         try {
             courses = degreeListMaker();
